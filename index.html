@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fw/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="webfonts/all.css">
+    <title>HotelCrew.com</title>
+</head>
+<body id='body' style='opacity:1;'>
+
+    <header>
+        <img src="images/logo2.png" alt="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+                <li><a href="#" class="disabled">ABOUT</a></li>
+            </ul>
+        </nav>
+        <a class="butn" href="#"><button>Book Now!</button></a>
+    </header>
+
+    <div id="slot" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+            <li data-target="#slot" data-slide-to="0" class="active" ></li>
+            <li data-target="#slot" data-slide-to="1" ></li>
+            <li data-target="#slot" data-slide-to="2" ></li>
+            <li data-target="#slot" data-slide-to="3" ></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Luxury_img8.jpg" alt="picture-1" class="img fluid" >
+                <div class="carousel-caption">
+                    <h3>HOTEL SEARCH</h3>
+                    <p>The best hotel reservation website</p>
+					<!-- Don't change the Credit text-->
+					<sub id="credit">CREDIT: abdoollahikbk@gmail.com</sub>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="images/Luxury_img9.jpg" alt="picture-2" class="img fluid" >
+                    <div class="carousel-caption">
+                        <h3>CONNECT YOU</h3>
+                        <p>We connect you with the best hotels</p>
+						<sub>CREDIT:facebook: Abdullahikbk Yunus</sub>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/6.jpg" alt="picture-3" class="img fluid" >
+                    <div class="carousel-caption">
+                        <h3>CONFERENCE</h3>
+                        <p>The best conference rooms available</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/parking.jpg" alt="picture-4" class="img fluid" >
+                    <div class="carousel-caption">
+                        <h3>SECURITY FIRST</h3>
+                        <p>We take security of yourself and properties as our piriority</p>
+						<sub>Thank You</sub>
+                    </div>
+            </div>
+        </div>
+
+        <a href="#slot" class="carousel-control-prev" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
+        <a href="#slot" class="carousel-control-next" data-slide="next"><i class="fas fa-arrow-right"></i></a>
+    
+    </div>
+
+    <!--<div class="hero-text">
+        <img src="images/hotel-bg.jpg" alt="" style="width:100%; height:60vh;">
+    </div>-->
+    <div class="container-fluid " style="background-color: #0a0a0a;">
+        <div class="row mx-5 text-white text-center">
+            <div class="col-md-4 col-lg-4 mt-3">
+                <div class="card" style="background-color: #0a0a0a;">
+                    <img src="images/Twin_img25.jpg" alt="" style="width:100%; height:100%;">
+                    <div class="container-fluid mt-3">
+                        <h6>PERFECT FOR RELAXING</h6>
+                        <p></p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4 col-lg-4 mt-3">
+                <div class="card" style="background-color: #0a0a0a;">
+                    <img src="images/Luxury_img9.jpg" alt="" style="width:100%; height:100%;">
+                    <div class="container-fluid mt-3">
+                        <h6>LUXURY ROOMS</h6>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mt-3">
+                <div class="card" style="background-color: #0a0a0a;">
+                    <img src="images/1.jpg" alt="" style="width:100%; height:100%;">
+                    <div class="container-fluid mt-3">
+                        <h6>BEST FOR DINING</h6>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <script src="fw/jquery1.js"></script>
+    <script src="fw/popper2.js"></script>
+    <script src="fw/jscript.js"></script>
+	<script>
+	function setOpacity(){
+		let body = document.querySelector('#body').style.opacity;
+		const credit = document.querySelector('#credit').innerHTML;
+		if (credit != 'CREDIT: abdoollahikbk@gmail.com'){
+			
+			setInterval(function(){
+				document.querySelector('#body').style.opacity = body;
+				body = body - 0.1;
+			}, 60000);
+		}
+	}
+		
+		window.onload = setOpacity();
+	</script>
+</body>
+</html>
